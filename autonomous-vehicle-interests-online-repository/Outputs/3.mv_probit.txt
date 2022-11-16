@@ -1,0 +1,277 @@
+
+Call: mvord(formula = MMO2(autonomous_hhveh, autonomous_rideshare, 
+    autonomous_pooled, autonomous_pref) ~ 0 + age_grp_2 + age_grp_3 + 
+    region_3 + region_5 + region_7 + future_decision_role_2 + 
+    future_decision_role_3 + num_hh_vehicles + household_members_1 + 
+    modes_used_2 + modes_used_3 + modes_used_4 + modes_used_6 + 
+    modes_used_7 + modes_used_8 + modes_used_12 + autonomous_aware_2 + 
+    autonomous_aware_3 + housing_6 + income_3 + income_4 + gender + 
+    employment_3 + employment_4 + education_2 + education_3 + 
+    drive_freq_3 + drive_freq_4 + transit_freq + job_type_3 + 
+    work_mode_2 + work_mode_3 + work_days + ethnicity + race_2 + 
+    race_3 + race_7 + factor1 + factor2, data = df, link = mvprobit(), 
+    coef.constraints = cbind(c(1, NA, NA, 4), c(1, NA, 3, 4), 
+        c(NA, NA, 3, NA), c(NA, NA, 3, NA), c(NA, NA, NA, 4), 
+        c(NA, 2, NA, NA), c(NA, 2, NA, NA), c(NA, 2, NA, NA), 
+        c(NA, NA, NA, 4), c(NA, 2, 3, NA), c(NA, NA, 3, NA), 
+        c(NA, NA, NA, 4), c(NA, NA, 3, NA), c(1, 2, 3, 4), c(NA, 
+            NA, 3, 4), c(NA, 2, 3, NA), c(1, 2, NA, 4), c(1, 
+            NA, NA, 4), c(NA, 2, NA, NA), c(1, NA, 3, NA), c(1, 
+            NA, 3, NA), c(NA, 2, 3, NA), c(NA, NA, 3, NA), c(1, 
+            NA, NA, NA), c(NA, 2, 3, NA), c(NA, 2, NA, NA), c(1, 
+            NA, NA, NA), c(NA, 2, NA, NA), c(1, NA, NA, NA), 
+        c(1, NA, NA, NA), c(NA, NA, 3, NA), c(NA, NA, 3, 4), 
+        c(1, NA, NA, NA), c(1, NA, NA, NA), c(NA, 2, NA, NA), 
+        c(NA, 2, NA, NA), c(NA, 2, NA, NA), c(1, 2, 3, 4), c(1, 
+            2, 3, 4)), threshold.constraints = c(1, 2, 3, 4))
+
+Formula: MMO2(autonomous_hhveh, autonomous_rideshare, autonomous_pooled, 
+    autonomous_pref) ~ 0 + age_grp_2 + age_grp_3 + region_3 + 
+    region_5 + region_7 + future_decision_role_2 + future_decision_role_3 + 
+    num_hh_vehicles + household_members_1 + modes_used_2 + modes_used_3 + 
+    modes_used_4 + modes_used_6 + modes_used_7 + modes_used_8 + 
+    modes_used_12 + autonomous_aware_2 + autonomous_aware_3 + 
+    housing_6 + income_3 + income_4 + gender + employment_3 + 
+    employment_4 + education_2 + education_3 + drive_freq_3 + 
+    drive_freq_4 + transit_freq + job_type_3 + work_mode_2 + 
+    work_mode_3 + work_days + ethnicity + race_2 + race_3 + race_7 + 
+    factor1 + factor2
+
+    link threshold nsubjects ndim     logPL    CLAIC    CLBIC fevals
+mvprobit  flexible      4136    4 -46565.17 93576.45 94987.79   4311
+
+Thresholds:
+                           Estimate Std. Error  z value  Pr(>|z|)    
+autonomous_hhveh 1|2     -0.4744835  0.1067065  -4.4466 8.723e-06 ***
+autonomous_hhveh 2|3      1.8077104  0.1046134  17.2799 < 2.2e-16 ***
+autonomous_rideshare 1|2 -0.0016858  0.0638603  -0.0264    0.9789    
+autonomous_rideshare 2|3  2.0217638  0.0670378  30.1586 < 2.2e-16 ***
+autonomous_pooled 1|2    -0.4254814  0.0461195  -9.2256 < 2.2e-16 ***
+autonomous_pooled 2|3     0.5272483  0.0458551  11.4981 < 2.2e-16 ***
+autonomous_pooled 3|4     1.4335399  0.0486935  29.4401 < 2.2e-16 ***
+autonomous_pref 1|2      -1.4462972  0.0616265 -23.4688 < 2.2e-16 ***
+autonomous_pref 2|3      -0.2950174  0.0584116  -5.0507 4.403e-07 ***
+autonomous_pref 3|4       0.8054575  0.0594051  13.5587 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Coefficients:
+                            Estimate Std. Error  z value  Pr(>|z|)    
+age_grp_21 1              -0.3150626  0.0623366  -5.0542 4.322e-07 ***
+age_grp_21 2              -0.2442657  0.0540245  -4.5214 6.144e-06 ***
+age_grp_31 1              -0.3766182  0.0769932  -4.8916 1.000e-06 ***
+age_grp_31 2              -0.1179618  0.0379260  -3.1103 0.0018689 ** 
+age_grp_31 3              -0.2759084  0.0594165  -4.6436 3.423e-06 ***
+region_31 1                0.1290410  0.0650064   1.9851 0.0471387 *  
+region_51 1                0.1449971  0.0437748   3.3123 0.0009252 ***
+region_71 1                1.3141612  0.6584589   1.9958 0.0459542 *  
+future_decision_role_21 1  0.1280830  0.0522805   2.4499 0.0142888 *  
+future_decision_role_31 1  0.1102387  0.0476975   2.3112 0.0208215 *  
+num_hh_vehicles 1          0.0645576  0.0213392   3.0253 0.0024838 ** 
+household_members_1 1      0.1442366  0.0463011   3.1152 0.0018383 ** 
+modes_used_21 1            0.1121389  0.0527215   2.1270 0.0334195 *  
+modes_used_21 2            0.1914209  0.0510208   3.7518 0.0001756 ***
+modes_used_31 1            0.1017793  0.0498117   2.0433 0.0410245 *  
+modes_used_41 1           -0.1341811  0.0452248  -2.9670 0.0030074 ** 
+modes_used_61 1           -0.1173095  0.0386965  -3.0315 0.0024332 ** 
+modes_used_71 1            0.1356916  0.0445128   3.0484 0.0023009 ** 
+modes_used_71 2            0.2615802  0.0429647   6.0883 1.141e-09 ***
+modes_used_71 3            0.0898795  0.0441566   2.0355 0.0418032 *  
+modes_used_71 4           -0.2131481  0.0413356  -5.1565 2.516e-07 ***
+modes_used_81 1            0.3679703  0.0517560   7.1097 1.163e-12 ***
+modes_used_81 2           -0.1232794  0.0485669  -2.5383 0.0111379 *  
+modes_used_121 1          -0.4921492  0.1244481  -3.9547 7.665e-05 ***
+modes_used_121 2          -0.3392409  0.1291318  -2.6271 0.0086119 ** 
+autonomous_aware_21 1      0.2684750  0.0471284   5.6967 1.222e-08 ***
+autonomous_aware_21 2      0.0926643  0.0402567   2.3018 0.0213444 *  
+autonomous_aware_21 3      0.1576974  0.0379700   4.1532 3.278e-05 ***
+autonomous_aware_31 1      0.5666604  0.0603139   9.3952 < 2.2e-16 ***
+autonomous_aware_31 2      0.3377884  0.0508690   6.6404 3.129e-11 ***
+housing_61 1               0.1867532  0.0694807   2.6878 0.0071915 ** 
+income_31 1                0.2081095  0.0479896   4.3366 1.447e-05 ***
+income_31 2               -0.0886714  0.0415019  -2.1366 0.0326337 *  
+income_41 1                0.3302086  0.0552372   5.9780 2.259e-09 ***
+income_41 2               -0.1209726  0.0474096  -2.5516 0.0107215 *  
+gender1 1                 -0.0896149  0.0404746  -2.2141 0.0268216 *  
+gender1 2                 -0.0696859  0.0355439  -1.9606 0.0499306 *  
+employment_31 1            0.6787381  0.3154333   2.1518 0.0314159 *  
+employment_41 1           -0.3020179  0.0847447  -3.5639 0.0003654 ***
+education_21 1            -0.1606701  0.0677786  -2.3705 0.0177634 *  
+education_21 2            -0.2269560  0.0579644  -3.9154 9.024e-05 ***
+education_31 1            -0.1126498  0.0422567  -2.6658 0.0076795 ** 
+drive_freq_31 1           -0.4417981  0.2062295  -2.1423 0.0321722 *  
+drive_freq_41 1           -0.5445083  0.2743896  -1.9844 0.0472074 *  
+transit_freq 1             0.0126191  0.0034328   3.6760 0.0002369 ***
+job_type_31 1             -0.2641762  0.1083301  -2.4386 0.0147434 *  
+work_mode_21 1             0.2288699  0.0803230   2.8494 0.0043806 ** 
+work_mode_31 1             0.3216125  0.1200685   2.6786 0.0073936 ** 
+work_mode_31 2            -0.2866200  0.1086663  -2.6376 0.0083491 ** 
+work_days 1               -0.0535907  0.0167684  -3.1959 0.0013938 ** 
+ethnicity1 1              -0.1923785  0.0632732  -3.0404 0.0023623 ** 
+race_21 1                  0.1382079  0.0523040   2.6424 0.0082322 ** 
+race_31 1                 -0.3154061  0.1059376  -2.9773 0.0029082 ** 
+race_71 1                  0.1613683  0.0722885   2.2323 0.0255963 *  
+factor1 1                  0.7899221  0.0401397  19.6793 < 2.2e-16 ***
+factor1 2                  0.5233909  0.0401814  13.0257 < 2.2e-16 ***
+factor1 3                  0.1266285  0.0353312   3.5840 0.0003383 ***
+factor1 4                  0.1546350  0.0352875   4.3821 1.175e-05 ***
+factor2 1                 -1.0962784  0.0721471 -15.1950 < 2.2e-16 ***
+factor2 2                 -0.9244054  0.0684449 -13.5058 < 2.2e-16 ***
+factor2 3                 -0.5744728  0.0584844  -9.8227 < 2.2e-16 ***
+factor2 4                 -0.2845415  0.0588361  -4.8362 1.324e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Error Structure:
+                                             Estimate Std. Error z value  Pr(>|z|)    
+corr autonomous_hhveh autonomous_rideshare   0.314762   0.019071 16.5048 < 2.2e-16 ***
+corr autonomous_hhveh autonomous_pooled      0.098072   0.022010  4.4557 8.360e-06 ***
+corr autonomous_hhveh autonomous_pref        0.291546   0.019184 15.1977 < 2.2e-16 ***
+corr autonomous_rideshare autonomous_pooled  0.157828   0.021003  7.5145 5.713e-14 ***
+corr autonomous_rideshare autonomous_pref   -0.100913   0.019919 -5.0663 4.057e-07 ***
+corr autonomous_pooled autonomous_pref      -0.104833   0.017747 -5.9070 3.484e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$call
+mvord(formula = MMO2(autonomous_hhveh, autonomous_rideshare, 
+    autonomous_pooled, autonomous_pref) ~ 0 + age_grp_2 + age_grp_3 + 
+    region_3 + region_5 + region_7 + future_decision_role_2 + 
+    future_decision_role_3 + num_hh_vehicles + household_members_1 + 
+    modes_used_2 + modes_used_3 + modes_used_4 + modes_used_6 + 
+    modes_used_7 + modes_used_8 + modes_used_12 + autonomous_aware_2 + 
+    autonomous_aware_3 + housing_6 + income_3 + income_4 + gender + 
+    employment_3 + employment_4 + education_2 + education_3 + 
+    drive_freq_3 + drive_freq_4 + transit_freq + job_type_3 + 
+    work_mode_2 + work_mode_3 + work_days + ethnicity + race_2 + 
+    race_3 + race_7 + factor1 + factor2, data = df, link = mvprobit(), 
+    coef.constraints = cbind(c(1, NA, NA, 4), c(1, NA, 3, 4), 
+        c(NA, NA, 3, NA), c(NA, NA, 3, NA), c(NA, NA, NA, 4), 
+        c(NA, 2, NA, NA), c(NA, 2, NA, NA), c(NA, 2, NA, NA), 
+        c(NA, NA, NA, 4), c(NA, 2, 3, NA), c(NA, NA, 3, NA), 
+        c(NA, NA, NA, 4), c(NA, NA, 3, NA), c(1, 2, 3, 4), c(NA, 
+            NA, 3, 4), c(NA, 2, 3, NA), c(1, 2, NA, 4), c(1, 
+            NA, NA, 4), c(NA, 2, NA, NA), c(1, NA, 3, NA), c(1, 
+            NA, 3, NA), c(NA, 2, 3, NA), c(NA, NA, 3, NA), c(1, 
+            NA, NA, NA), c(NA, 2, 3, NA), c(NA, 2, NA, NA), c(1, 
+            NA, NA, NA), c(NA, 2, NA, NA), c(1, NA, NA, NA), 
+        c(1, NA, NA, NA), c(NA, NA, 3, NA), c(NA, NA, 3, 4), 
+        c(1, NA, NA, NA), c(1, NA, NA, NA), c(NA, 2, NA, NA), 
+        c(NA, 2, NA, NA), c(NA, 2, NA, NA), c(1, 2, 3, 4), c(1, 
+            2, 3, 4)), threshold.constraints = c(1, 2, 3, 4))
+
+$formula
+MMO2(autonomous_hhveh, autonomous_rideshare, autonomous_pooled, 
+    autonomous_pref) ~ 0 + age_grp_2 + age_grp_3 + region_3 + 
+    region_5 + region_7 + future_decision_role_2 + future_decision_role_3 + 
+    num_hh_vehicles + household_members_1 + modes_used_2 + modes_used_3 + 
+    modes_used_4 + modes_used_6 + modes_used_7 + modes_used_8 + 
+    modes_used_12 + autonomous_aware_2 + autonomous_aware_3 + 
+    housing_6 + income_3 + income_4 + gender + employment_3 + 
+    employment_4 + education_2 + education_3 + drive_freq_3 + 
+    drive_freq_4 + transit_freq + job_type_3 + work_mode_2 + 
+    work_mode_3 + work_days + ethnicity + race_2 + race_3 + race_7 + 
+    factor1 + factor2
+
+$info
+      c("link", object$rho$link$name) c("threshold", object$rho$threshold) c("nsubjects", object$rho$n) c("ndim", object$rho$ndim)
+                                 link                            threshold                    nsubjects                       ndim
+value                        mvprobit                             flexible                         4136                          4
+      c("logPL", round(-object$rho$objective, 2)) c("CLAIC", ifelse(object$rho$se, round(object$rho$claic, 2), 
+                                            logPL                                                         CLAIC
+value                                   -46565.17                                                      93576.45
+      c("CLBIC", ifelse(object$rho$se, round(object$rho$clbic, 2), 
+                                                              CLBIC
+value                                                      94987.79
+      c("fevals", if (is.null(object$rho$optRes$fevals)) NA else object$rho$optRes$fevals)
+                                                                                    fevals
+value                                                                                 4311
+
+$thresholds
+                             Estimate Std. Error     z value      Pr(>|z|)
+autonomous_hhveh 1|2     -0.474483484 0.10670648  -4.4466228  8.723081e-06
+autonomous_hhveh 2|3      1.807710409 0.10461339  17.2799143  6.664702e-67
+autonomous_rideshare 1|2 -0.001685802 0.06386025  -0.0263983  9.789397e-01
+autonomous_rideshare 2|3  2.021763825 0.06703781  30.1585612 8.283421e-200
+autonomous_pooled 1|2    -0.425481374 0.04611951  -9.2256261  2.819092e-20
+autonomous_pooled 2|3     0.527248326 0.04585509  11.4981418  1.347860e-30
+autonomous_pooled 3|4     1.433539928 0.04869351  29.4400604 1.687575e-190
+autonomous_pref 1|2      -1.446297206 0.06162647 -23.4687643 8.505072e-122
+autonomous_pref 2|3      -0.295017376 0.05841159  -5.0506654  4.402737e-07
+autonomous_pref 3|4       0.805457468 0.05940511  13.5587246  7.034864e-42
+
+$coefficients
+                             Estimate Std. Error    z value     Pr(>|z|)
+age_grp_21 1              -0.31506264 0.06233662  -5.054215 4.321652e-07
+age_grp_21 2              -0.24426567 0.05402452  -4.521386 6.143615e-06
+age_grp_31 1              -0.37661820 0.07699321  -4.891577 1.000314e-06
+age_grp_31 2              -0.11796178 0.03792599  -3.110315 1.868880e-03
+age_grp_31 3              -0.27590836 0.05941649  -4.643633 3.423355e-06
+region_31 1                0.12904096 0.06500635   1.985052 4.713873e-02
+region_51 1                0.14499711 0.04377479   3.312343 9.251811e-04
+region_71 1                1.31416117 0.65845894   1.995813 4.595424e-02
+future_decision_role_21 1  0.12808305 0.05228050   2.449920 1.428878e-02
+future_decision_role_31 1  0.11023870 0.04769750   2.311205 2.082154e-02
+num_hh_vehicles 1          0.06455761 0.02133918   3.025308 2.483798e-03
+household_members_1 1      0.14423659 0.04630112   3.115185 1.838293e-03
+modes_used_21 1            0.11213891 0.05272145   2.127007 3.341949e-02
+modes_used_21 2            0.19142093 0.05102080   3.751821 1.755547e-04
+modes_used_31 1            0.10177926 0.04981165   2.043282 4.102451e-02
+modes_used_41 1           -0.13418110 0.04522484  -2.966978 3.007423e-03
+modes_used_61 1           -0.11730954 0.03869650  -3.031529 2.433186e-03
+modes_used_71 1            0.13569157 0.04451280   3.048372 2.300851e-03
+modes_used_71 2            0.26158022 0.04296466   6.088264 1.141413e-09
+modes_used_71 3            0.08987954 0.04415657   2.035474 4.180323e-02
+modes_used_71 4           -0.21314813 0.04133561  -5.156526 2.515735e-07
+modes_used_81 1            0.36797034 0.05175600   7.109714 1.162840e-12
+modes_used_81 2           -0.12327943 0.04856693  -2.538341 1.113794e-02
+modes_used_121 1          -0.49214919 0.12444811  -3.954654 7.664552e-05
+modes_used_121 2          -0.33924093 0.12913184  -2.627090 8.611861e-03
+autonomous_aware_21 1      0.26847497 0.04712840   5.696671 1.221693e-08
+autonomous_aware_21 2      0.09266427 0.04025666   2.301837 2.134435e-02
+autonomous_aware_21 3      0.15769739 0.03797004   4.153206 3.278495e-05
+autonomous_aware_31 1      0.56666042 0.06031385   9.395196 5.711163e-21
+autonomous_aware_31 2      0.33778839 0.05086897   6.640362 3.129130e-11
+housing_61 1               0.18675322 0.06948065   2.687845 7.191480e-03
+income_31 1                0.20810946 0.04798957   4.336556 1.447326e-05
+income_31 2               -0.08867144 0.04150195  -2.136561 3.263373e-02
+income_41 1                0.33020860 0.05523723   5.978008 2.258833e-09
+income_41 2               -0.12097259 0.04740963  -2.551646 1.072154e-02
+gender1 1                 -0.08961490 0.04047457  -2.214104 2.682163e-02
+gender1 2                 -0.06968594 0.03554392  -1.960558 4.993055e-02
+employment_31 1            0.67873805 0.31543327   2.151764 3.141592e-02
+employment_41 1           -0.30201794 0.08474470  -3.563856 3.654458e-04
+education_21 1            -0.16067014 0.06777864  -2.370513 1.776343e-02
+education_21 2            -0.22695603 0.05796436  -3.915441 9.023916e-05
+education_31 1            -0.11264979 0.04225668  -2.665846 7.679494e-03
+drive_freq_31 1           -0.44179814 0.20622947  -2.142265 3.217218e-02
+drive_freq_41 1           -0.54450825 0.27438960  -1.984435 4.720740e-02
+transit_freq 1             0.01261915 0.00343283   3.676019 2.369014e-04
+job_type_31 1             -0.26417618 0.10833014  -2.438621 1.474341e-02
+work_mode_21 1             0.22886988 0.08032298   2.849370 4.380593e-03
+work_mode_31 1             0.32161247 0.12006851   2.678575 7.393626e-03
+work_mode_31 2            -0.28661997 0.10866630  -2.637616 8.349104e-03
+work_days 1               -0.05359067 0.01676837  -3.195939 1.393767e-03
+ethnicity1 1              -0.19237855 0.06327316  -3.040445 2.362289e-03
+race_21 1                  0.13820787 0.05230400   2.642396 8.232181e-03
+race_31 1                 -0.31540609 0.10593762  -2.977281 2.908170e-03
+race_71 1                  0.16136828 0.07228845   2.232283 2.559627e-02
+factor1 1                  0.78992207 0.04013973  19.679307 3.244084e-86
+factor1 2                  0.52339094 0.04018143  13.025691 8.740660e-39
+factor1 3                  0.12662852 0.03533122   3.584041 3.383193e-04
+factor1 4                  0.15463504 0.03528755   4.382142 1.175181e-05
+factor2 1                 -1.09627837 0.07214713 -15.195039 3.814389e-52
+factor2 2                 -0.92440539 0.06844491 -13.505830 1.444756e-41
+factor2 3                 -0.57447276 0.05848445  -9.822658 8.993982e-23
+factor2 4                 -0.28454147 0.05883606  -4.836175 1.323614e-06
+
+$error.structure
+                                               Estimate Std. Error   z value     Pr(>|z|)
+corr autonomous_hhveh autonomous_rideshare   0.31476171 0.01907089 16.504823 3.387238e-61
+corr autonomous_hhveh autonomous_pooled      0.09807208 0.02201026  4.455743 8.360300e-06
+corr autonomous_hhveh autonomous_pref        0.29154632 0.01918354 15.197736 3.660532e-52
+corr autonomous_rideshare autonomous_pooled  0.15782804 0.02100312  7.514506 5.712630e-14
+corr autonomous_rideshare autonomous_pref   -0.10091335 0.01991862 -5.066281 4.056630e-07
+corr autonomous_pooled autonomous_pref      -0.10483348 0.01774731 -5.907009 3.483757e-09
+
+attr(,"class")
+[1] "summary.mvord"
