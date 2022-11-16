@@ -1,2 +1,2 @@
 # multivarite-modeling-of-AV-interests
-This is a release of data and analysis scripts of the "Private or on-demand autonomous vehicles? Modeling public interest using a multivariate model " research study. 
+This is a release of data and analysis scripts of the "Private or on-demand autonomous vehicles? Modeling public interest using a multivariate model " research study. It contains the 2019 California Vehicle Survey data as well as the scripts followed to clean and analyze the data. A word document within the folder "Description.docx" presents the steps followed to get the outputs. All scripts are written in R.
