@@ -1,0 +1,15 @@
+1.	Open the R project “AV_adoption_interests”.
+2.	Open and run the R script “Analysis/1.clean_data”.
+    a.	The inputs to this script are: 
+        i.	Household level data: “Data/Raw data/survey_res_main”
+        ii.	Personal level data: “Data/Raw data/survey_res_person”
+    b.	The documentation of these two input files is available in “Data/Raw data/raw_data_documention”.
+    c.	The output of this script is “Data/Cleaned data/cleaned_data”.
+    d.	The documentation of the output file is available in “Data/Cleaned data/cleaned_data_documention”.
+3.	Open and run the R script “Analysis/2.analysis”.
+    a.	The input to this script is “Data/Cleaned data/cleaned_data”.
+    b.	The outputs of this script are:
+        i.	Measurement model results: “Outputs/1.measurement_final”
+        ii.	Structural model results: “Outputs/1.structural_final”
+        iii.	Mulitvariate ordered probit model results: “Outputs/3.mv_probit”
+        iv.	Other outputs (related to policy implications) need to be viewed from the console.
