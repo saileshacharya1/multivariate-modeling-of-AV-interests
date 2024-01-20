@@ -1,0 +1,221 @@
+lavaan 0.6-9 ended normally after 20 iterations
+
+  Estimator                                       DWLS
+  Optimization method                           NLMINB
+  Number of model parameters                        29
+                                                      
+  Number of observations                          4136
+                                                      
+Model Test User Model:
+                                              Standard      Robust
+  Test Statistic                               177.270     400.006
+  Degrees of freedom                                13          13
+  P-value (Chi-square)                           0.000       0.000
+  Scaling correction factor                                  0.443
+       Satorra-Bentler correction                                 
+
+Model Test Baseline Model:
+
+  Test statistic                             33105.515   33105.515
+  Degrees of freedom                                21          21
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  1.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.995       0.988
+  Tucker-Lewis Index (TLI)                       0.992       0.981
+                                                                  
+  Robust Comparative Fit Index (CFI)                         0.995
+  Robust Tucker-Lewis Index (TLI)                            0.992
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.055       0.085
+  90 Percent confidence interval - lower         0.048       0.074
+  90 Percent confidence interval - upper         0.063       0.096
+  P-value RMSEA <= 0.05                          0.108       0.000
+                                                                  
+  Robust RMSEA                                               0.056
+  90 Percent confidence interval - lower                     0.052
+  90 Percent confidence interval - upper                     0.061
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.034       0.034
+
+Parameter Estimates:
+
+  Standard errors                           Robust.sem
+  Information                                 Expected
+  Information saturated (h1) model        Unstructured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  factor1 =~                                                            
+    autonomos_tt_1    1.000                               0.880    0.880
+    autonomos_tt_3    0.754    0.013   56.699    0.000    0.664    0.664
+    autonomos_tt_5    0.784    0.013   61.872    0.000    0.691    0.691
+    autonomos_tt_7    0.815    0.013   60.902    0.000    0.717    0.717
+    autonomos_tt_8    0.888    0.012   75.250    0.000    0.781    0.781
+  factor2 =~                                                            
+    autonomos_tt_2    1.000                               0.577    0.577
+    autonomos_tt_4    1.503    0.049   30.552    0.000    0.867    0.867
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  factor1 ~~                                                            
+    factor2          -0.360    0.013  -27.028    0.000   -0.709   -0.709
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .autonomos_tt_1    0.000                               0.000    0.000
+   .autonomos_tt_3    0.000                               0.000    0.000
+   .autonomos_tt_5    0.000                               0.000    0.000
+   .autonomos_tt_7    0.000                               0.000    0.000
+   .autonomos_tt_8    0.000                               0.000    0.000
+   .autonomos_tt_2    0.000                               0.000    0.000
+   .autonomos_tt_4    0.000                               0.000    0.000
+    factor1           0.000                               0.000    0.000
+    factor2           0.000                               0.000    0.000
+
+Thresholds:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    autnms_tt_1|t1   -0.753    0.022  -34.788    0.000   -0.753   -0.753
+    autnms_tt_1|t2   -0.204    0.020  -10.410    0.000   -0.204   -0.204
+    autnms_tt_1|t3    0.910    0.023   40.050    0.000    0.910    0.910
+    autnms_tt_3|t1   -0.715    0.021  -33.375    0.000   -0.715   -0.715
+    autnms_tt_3|t2   -0.076    0.020   -3.918    0.000   -0.076   -0.076
+    autnms_tt_3|t3    0.986    0.023   42.223    0.000    0.986    0.986
+    autnms_tt_5|t1   -0.099    0.020   -5.068    0.000   -0.099   -0.099
+    autnms_tt_5|t2    0.665    0.021   31.472    0.000    0.665    0.665
+    autnms_tt_5|t3    1.604    0.032   50.140    0.000    1.604    1.604
+    autnms_tt_7|t1    0.284    0.020   14.347    0.000    0.284    0.284
+    autnms_tt_7|t2    0.857    0.022   38.396    0.000    0.857    0.857
+    autnms_tt_7|t3    1.640    0.033   50.067    0.000    1.640    1.640
+    autnms_tt_8|t1   -0.574    0.021  -27.738    0.000   -0.574   -0.574
+    autnms_tt_8|t2   -0.059    0.020   -3.016    0.003   -0.059   -0.059
+    autnms_tt_8|t3    0.947    0.023   41.120    0.000    0.947    0.947
+    autnms_tt_2|t1   -1.196    0.026  -46.891    0.000   -1.196   -1.196
+    autnms_tt_2|t2   -0.487    0.020  -23.930    0.000   -0.487   -0.487
+    autnms_tt_2|t3    0.483    0.020   23.746    0.000    0.483    0.483
+    autnms_tt_4|t1   -0.683    0.021  -32.158    0.000   -0.683   -0.683
+    autnms_tt_4|t2    0.111    0.020    5.689    0.000    0.111    0.111
+    autnms_tt_4|t3    0.758    0.022   34.993    0.000    0.758    0.758
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .autonomos_tt_1    0.225                               0.225    0.225
+   .autonomos_tt_3    0.560                               0.560    0.560
+   .autonomos_tt_5    0.523                               0.523    0.523
+   .autonomos_tt_7    0.486                               0.486    0.486
+   .autonomos_tt_8    0.389                               0.389    0.389
+   .autonomos_tt_2    0.667                               0.667    0.667
+   .autonomos_tt_4    0.248                               0.248    0.248
+    factor1           0.775    0.012   62.213    0.000    1.000    1.000
+    factor2           0.333    0.016   21.201    0.000    1.000    1.000
+
+Scales y*:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    autonomos_tt_1    1.000                               1.000    1.000
+    autonomos_tt_3    1.000                               1.000    1.000
+    autonomos_tt_5    1.000                               1.000    1.000
+    autonomos_tt_7    1.000                               1.000    1.000
+    autonomos_tt_8    1.000                               1.000    1.000
+    autonomos_tt_2    1.000                               1.000    1.000
+    autonomos_tt_4    1.000                               1.000    1.000
+
+R-Square:
+                   Estimate
+    autonomos_tt_1    0.775
+    autonomos_tt_3    0.440
+    autonomos_tt_5    0.477
+    autonomos_tt_7    0.514
+    autonomos_tt_8    0.611
+    autonomos_tt_2    0.333
+    autonomos_tt_4    0.752
+
+$FIT
+                         npar                          fmin                         chisq                            df 
+                       29.000                         0.021                       177.270                        13.000 
+                       pvalue                  chisq.scaled                     df.scaled                 pvalue.scaled 
+                        0.000                       400.006                        13.000                         0.000 
+         chisq.scaling.factor                baseline.chisq                   baseline.df               baseline.pvalue 
+                        0.443                     33105.515                        21.000                         0.000 
+        baseline.chisq.scaled            baseline.df.scaled        baseline.pvalue.scaled baseline.chisq.scaling.factor 
+                    33105.515                        21.000                         0.000                         1.000 
+                          cfi                           tli                    cfi.scaled                    tli.scaled 
+                        0.995                         0.992                         0.988                         0.981 
+                   cfi.robust                    tli.robust                         rmsea                rmsea.ci.lower 
+                        0.995                         0.992                         0.055                         0.048 
+               rmsea.ci.upper                  rmsea.pvalue                  rmsea.scaled         rmsea.ci.lower.scaled 
+                        0.063                         0.108                         0.085                         0.074 
+        rmsea.ci.upper.scaled           rmsea.pvalue.scaled                  rmsea.robust         rmsea.ci.lower.robust 
+                        0.096                         0.000                         0.056                         0.052 
+        rmsea.ci.upper.robust           rmsea.pvalue.robust                          srmr 
+                        0.061                            NA                         0.034 
+
+$PE
+                lhs  op              rhs exo         est         se          z       pvalue      std.lv     std.all     std.nox
+1           factor1  =~ autonomous_att_1   0  1.00000000 0.00000000         NA           NA  0.88037882  0.88037882  0.88037882
+2           factor1  =~ autonomous_att_3   0  0.75369142 0.01329278  56.699324 0.000000e+00  0.66353396  0.66353396  0.66353396
+3           factor1  =~ autonomous_att_5   0  0.78433689 0.01267681  61.871784 0.000000e+00  0.69051358  0.69051358  0.69051358
+4           factor1  =~ autonomous_att_7   0  0.81459961 0.01337560  60.901933 0.000000e+00  0.71715625  0.71715625  0.71715625
+5           factor1  =~ autonomous_att_8   0  0.88768329 0.01179638  75.250479 0.000000e+00  0.78149757  0.78149757  0.78149757
+6           factor2  =~ autonomous_att_2   0  1.00000000 0.00000000         NA           NA  0.57682209  0.57682209  0.57682209
+7           factor2  =~ autonomous_att_4   0  1.50287521 0.04919023  30.552309 0.000000e+00  0.86689161  0.86689161  0.86689161
+8  autonomous_att_1   |               t1   0 -0.75267689 0.02163588 -34.788366 0.000000e+00 -0.75267689 -0.75267689 -0.75267689
+9  autonomous_att_1   |               t2   0 -0.20444248 0.01963920 -10.409917 0.000000e+00 -0.20444248 -0.20444248 -0.20444248
+10 autonomous_att_1   |               t3   0  0.91029065 0.02272900  40.049750 0.000000e+00  0.91029065  0.91029065  0.91029065
+11 autonomous_att_3   |               t1   0 -0.71460212 0.02141144 -33.374785 0.000000e+00 -0.71460212 -0.71460212 -0.71460212
+12 autonomous_att_3   |               t2   0 -0.07643683 0.01951117  -3.917594 8.943722e-05 -0.07643683 -0.07643683 -0.07643683
+13 autonomous_att_3   |               t3   0  0.98630284 0.02335946  42.222853 0.000000e+00  0.98630284  0.98630284  0.98630284
+14 autonomous_att_5   |               t1   0 -0.09894759 0.01952517  -5.067693 4.026664e-07 -0.09894759 -0.09894759 -0.09894759
+15 autonomous_att_5   |               t2   0  0.66538745 0.02114251  31.471541 0.000000e+00  0.66538745  0.66538745  0.66538745
+16 autonomous_att_5   |               t3   0  1.60360670 0.03198253  50.140088 0.000000e+00  1.60360670  1.60360670  1.60360670
+17 autonomous_att_7   |               t1   0  0.28375813 0.01977831  14.346938 0.000000e+00  0.28375813  0.28375813  0.28375813
+18 autonomous_att_7   |               t2   0  0.85744459 0.02233168  38.395884 0.000000e+00  0.85744459  0.85744459  0.85744459
+19 autonomous_att_7   |               t3   0  1.63971793 0.03275017  50.067461 0.000000e+00  1.63971793  1.63971793  1.63971793
+20 autonomous_att_8   |               t1   0 -0.57430116 0.02070475 -27.737649 0.000000e+00 -0.57430116 -0.57430116 -0.57430116
+21 autonomous_att_8   |               t2   0 -0.05882088 0.01950272  -3.016034 2.561041e-03 -0.05882088 -0.05882088 -0.05882088
+22 autonomous_att_8   |               t3   0  0.94666317 0.02302172  41.120430 0.000000e+00  0.94666317  0.94666317  0.94666317
+23 autonomous_att_2   |               t1   0 -1.19618401 0.02550988 -46.891015 0.000000e+00 -1.19618401 -1.19618401 -1.19618401
+24 autonomous_att_2   |               t2   0 -0.48706976 0.02035436 -23.929502 0.000000e+00 -0.48706976 -0.48706976 -0.48706976
+25 autonomous_att_2   |               t3   0  0.48297956 0.02033952  23.745873 0.000000e+00  0.48297956  0.48297956  0.48297956
+26 autonomous_att_4   |               t1   0 -0.68288288 0.02123543 -32.157712 0.000000e+00 -0.68288288 -0.68288288 -0.68288288
+27 autonomous_att_4   |               t2   0  0.11113574 0.01953427   5.689272 1.275823e-08  0.11113574  0.11113574  0.11113574
+28 autonomous_att_4   |               t3   0  0.75832042 0.02167040  34.993380 0.000000e+00  0.75832042  0.75832042  0.75832042
+29 autonomous_att_1  ~~ autonomous_att_1   0  0.22493313 0.00000000         NA           NA  0.22493313  0.22493313  0.22493313
+30 autonomous_att_3  ~~ autonomous_att_3   0  0.55972268 0.00000000         NA           NA  0.55972268  0.55972268  0.55972268
+31 autonomous_att_5  ~~ autonomous_att_5   0  0.52319099 0.00000000         NA           NA  0.52319099  0.52319099  0.52319099
+32 autonomous_att_7  ~~ autonomous_att_7   0  0.48568691 0.00000000         NA           NA  0.48568691  0.48568691  0.48568691
+33 autonomous_att_8  ~~ autonomous_att_8   0  0.38926155 0.00000000         NA           NA  0.38926155  0.38926155  0.38926155
+34 autonomous_att_2  ~~ autonomous_att_2   0  0.66727628 0.00000000         NA           NA  0.66727628  0.66727628  0.66727628
+35 autonomous_att_4  ~~ autonomous_att_4   0  0.24849893 0.00000000         NA           NA  0.24849893  0.24849893  0.24849893
+36          factor1  ~~          factor1   0  0.77506687 0.01245837  62.212532 0.000000e+00  1.00000000  1.00000000  1.00000000
+37          factor2  ~~          factor2   0  0.33272372 0.01569381  21.200953 0.000000e+00  1.00000000  1.00000000  1.00000000
+38          factor1  ~~          factor2   0 -0.35982323 0.01331293 -27.028099 0.000000e+00 -0.70856180 -0.70856180 -0.70856180
+39 autonomous_att_1 ~*~ autonomous_att_1   0  1.00000000 0.00000000         NA           NA  1.00000000  1.00000000  1.00000000
+40 autonomous_att_3 ~*~ autonomous_att_3   0  1.00000000 0.00000000         NA           NA  1.00000000  1.00000000  1.00000000
+41 autonomous_att_5 ~*~ autonomous_att_5   0  1.00000000 0.00000000         NA           NA  1.00000000  1.00000000  1.00000000
+42 autonomous_att_7 ~*~ autonomous_att_7   0  1.00000000 0.00000000         NA           NA  1.00000000  1.00000000  1.00000000
+43 autonomous_att_8 ~*~ autonomous_att_8   0  1.00000000 0.00000000         NA           NA  1.00000000  1.00000000  1.00000000
+44 autonomous_att_2 ~*~ autonomous_att_2   0  1.00000000 0.00000000         NA           NA  1.00000000  1.00000000  1.00000000
+45 autonomous_att_4 ~*~ autonomous_att_4   0  1.00000000 0.00000000         NA           NA  1.00000000  1.00000000  1.00000000
+46 autonomous_att_1  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+47 autonomous_att_3  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+48 autonomous_att_5  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+49 autonomous_att_7  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+50 autonomous_att_8  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+51 autonomous_att_2  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+52 autonomous_att_4  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+53          factor1  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+54          factor2  ~1                    0  0.00000000 0.00000000         NA           NA  0.00000000  0.00000000  0.00000000
+55 autonomous_att_1  r2 autonomous_att_1   0  0.77506687         NA         NA           NA          NA          NA          NA
+56 autonomous_att_3  r2 autonomous_att_3   0  0.44027732         NA         NA           NA          NA          NA          NA
+57 autonomous_att_5  r2 autonomous_att_5   0  0.47680901         NA         NA           NA          NA          NA          NA
+58 autonomous_att_7  r2 autonomous_att_7   0  0.51431309         NA         NA           NA          NA          NA          NA
+59 autonomous_att_8  r2 autonomous_att_8   0  0.61073845         NA         NA           NA          NA          NA          NA
+60 autonomous_att_2  r2 autonomous_att_2   0  0.33272372         NA         NA           NA          NA          NA          NA
+61 autonomous_att_4  r2 autonomous_att_4   0  0.75150107         NA         NA           NA          NA          NA          NA
+
